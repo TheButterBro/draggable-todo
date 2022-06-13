@@ -1,0 +1,10 @@
+:root {
+    --background-color-dark: rgb(20, 20, 20);
+    --color-dark: whitesmoke;
+    
+    --background-color-light: rgb(221, 221, 221);
+    --color-light: rgb(20, 20, 20);
+
+    --background-color: var(--background-color-dark);
+    --color: var(--color-dark);
+}

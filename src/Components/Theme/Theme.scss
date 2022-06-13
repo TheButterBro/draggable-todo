@@ -1,0 +1,15 @@
+.theme {
+    position: absolute;
+  
+    top: 20px;
+    right: 20px;
+  
+    background: transparent;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+    img {
+      transition: all .3s linear;
+      max-width: 60px;
+    }
+  }

@@ -1,0 +1,233 @@
+.helper-wrapper-enter {
+    opacity: 0;
+}
+.helper-wrapper-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.helper-wrapper-exit {
+    opacity: 1;
+}
+.helper-wrapper-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-out;
+}
+
+.helper {
+    position: absolute;
+
+    transition: all .3s linear;
+    min-height: 100%;
+    width: 100vw;
+
+    img {
+        max-width: 100px;
+    }
+    p {
+        cursor: default;
+        color: var(--color);
+    }
+    span {
+        cursor: default;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+
+        
+        text-align: center;
+
+        border: 3px dashed palevioletred;
+        border-radius: 50px;
+
+        font-size: 30px;
+        line-height: 27px;
+
+        color: var(--color);
+    }
+    .helper-input {
+        position: relative;
+
+        height: 100vh;
+        .helper-input__input {
+            position: absolute;
+            
+            transform: translate(0, -20px);
+            left: 480px;
+            top: 50%;   
+            p {
+                transform: translate(-50px, 7px);
+                width: 200px;
+            }
+            span {
+                position: absolute;
+                top: 10px;
+                left: -20px;
+            }
+        }
+        .helper-input__button {
+            position: absolute;
+        
+            left: 810px;
+            top: 50%;
+
+            transform: translate(0, 30px);
+            p {
+                transform: translate(-50px);
+                width: 150px;
+            }
+            img {
+                transform: rotate(45deg);
+                max-width: 70px;
+            }
+            span {
+                position: absolute;
+                top: 5px;
+                left: -20px;
+            }
+        }
+    }
+    .hepler-task {
+        position: absolute;
+        top: 130px;
+        left: 600px;
+
+        display: flex;
+        .helper-task__place {
+            p {
+                width: 200px;
+            }
+            img {
+                max-width: 70px;
+                transform: scale(1, -1)
+            }
+            span {
+                font-size: 27px;
+                line-height: 23px;
+
+                position: absolute;
+                top: 0px;
+                left: -50px;
+            }
+        }
+        .helper-task__grabing {
+            display: flex;
+            transform: translate(-20px, -130px);
+            align-items: flex-end;
+            p {
+                width: 100px;
+            }
+            img {
+                margin-right: 10px;
+                max-height: 40px;
+                max-width: 40px;
+            }
+        }
+        .helper-task__grabbed {
+            display: flex;
+            align-items: flex-start;
+            p {
+                width: 200px;
+            }
+            img {
+                margin-right: 10px;
+                max-height: 40px;
+                max-width: 40px;
+            }
+        }
+    }
+    .helper-toggle {
+        position: absolute;
+
+        right: 110px;
+        bottom: 7px;
+
+        display: flex;
+        align-items: center;
+        
+        gap: 10px;
+
+        p {
+            width: fit-content;
+            white-space: nowrap;
+        }
+        span {
+            padding: 0 6px;
+            display: inline-block;
+            font-size: 27px;
+            line-height: 23px;
+        }
+        img {
+            transform: rotate(90deg);
+        }
+    }
+}
+.toggler {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    
+    .switch {
+        border-radius: 15px;
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+      
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .slider {
+        border: 1px solid black;
+
+        display: inline;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: pink;
+    
+        transition: .4s;
+    }
+    
+    .slider:before {
+        border: 1px solid black;
+
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+    
+        transition: .4s;
+    }
+    
+    input:checked + .slider {
+        background-color: palevioletred;
+    }
+    
+    input:focus + .slider {
+        box-shadow: 0 0 1px palevioletred;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+    .slider.round {
+        border-radius: 15px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+}

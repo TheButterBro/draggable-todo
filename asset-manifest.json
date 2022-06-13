@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/draggable-todo/static/css/main.4048c2f3.css",
+    "main.js": "/draggable-todo/static/js/main.d7374e70.js",
+    "static/media/moon.png": "/draggable-todo/static/media/moon.6da7afca2fe90d9333b8.png",
+    "static/media/grab.png": "/draggable-todo/static/media/grab.6d85ead678742f464af0.png",
+    "static/media/sun.png": "/draggable-todo/static/media/sun.2124b68753670bfcf24d.png",
+    "static/media/grabed.png": "/draggable-todo/static/media/grabed.ae42d22f2067ab0d568a.png",
+    "static/media/arrow_dashed.png": "/draggable-todo/static/media/arrow_dashed.57fa4353d999821c6d94.png",
+    "static/media/logo.svg": "/draggable-todo/static/media/logo.82e9f796ebfc960e1f88f9c84e3414d3.svg",
+    "index.html": "/draggable-todo/index.html",
+    "main.4048c2f3.css.map": "/draggable-todo/static/css/main.4048c2f3.css.map",
+    "main.d7374e70.js.map": "/draggable-todo/static/js/main.d7374e70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4048c2f3.css",
+    "static/js/main.d7374e70.js"
+  ]
+}
